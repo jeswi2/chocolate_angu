@@ -12,6 +12,7 @@ import { OrderComponent } from './order/order.component';
 import { PaymentComponent } from './payment/payment.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
+import { LogoutComponent } from './logout/logout.component';
 
 const appRoutes:Routes=[
   {
@@ -34,6 +35,9 @@ path:"home",component:HomeComponent
               },
               {
                 path:"aboutus",component:AboutusComponent
+              },
+              {
+                path:"logout",component:LogoutComponent
               }
               
 ]
@@ -48,7 +52,8 @@ path:"home",component:HomeComponent
     OrderComponent,
     PaymentComponent,
     ContactComponent,
-    AboutusComponent
+    AboutusComponent,
+    LogoutComponent
   ],
   imports: [
     BrowserModule,
