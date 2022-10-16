@@ -9,6 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { OrderComponent } from './order/order.component';
+import { PaymentComponent } from './payment/payment.component';
 
 const appRoutes:Routes=[
   {
@@ -23,6 +24,9 @@ path:"home",component:HomeComponent
       {
         path:"order",component:OrderComponent
           },
+          {
+            path:"payment",component:PaymentComponent
+              }
 ]
 
 @NgModule({
@@ -32,7 +36,8 @@ path:"home",component:HomeComponent
     NavbarComponent,
     HomeComponent,
     GalleryComponent,
-    OrderComponent
+    OrderComponent,
+    PaymentComponent
   ],
   imports: [
     BrowserModule,
