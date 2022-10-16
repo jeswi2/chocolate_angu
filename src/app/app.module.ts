@@ -11,6 +11,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { OrderComponent } from './order/order.component';
 import { PaymentComponent } from './payment/payment.component';
 import { ContactComponent } from './contact/contact.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
 
 const appRoutes:Routes=[
   {
@@ -31,6 +32,9 @@ path:"home",component:HomeComponent
               {
                 path:"contact",component:ContactComponent
               },
+              {
+                path:"aboutus",component:AboutusComponent
+              }
               
 ]
 
@@ -43,7 +47,8 @@ path:"home",component:HomeComponent
     GalleryComponent,
     OrderComponent,
     PaymentComponent,
-    ContactComponent
+    ContactComponent,
+    AboutusComponent
   ],
   imports: [
     BrowserModule,
