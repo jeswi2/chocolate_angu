@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { OrderComponent } from './order/order.component';
 
 const appRoutes:Routes=[
   {
@@ -18,7 +19,10 @@ path:"home",component:HomeComponent
   },
   {
     path:"gallery",component:GalleryComponent
-      }
+      },
+      {
+        path:"order",component:OrderComponent
+          },
 ]
 
 @NgModule({
@@ -27,7 +31,8 @@ path:"home",component:HomeComponent
     LoginComponent,
     NavbarComponent,
     HomeComponent,
-    GalleryComponent
+    GalleryComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,
